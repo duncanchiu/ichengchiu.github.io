@@ -1,0 +1,63 @@
+ ul.tab {
+     /* 取消ul預設的內縮及樣式 */
+     margin-left: 2%;
+     padding: 30px;
+     list-style: none;
+     background-color: #FF6600;
+     height: 5px;
+ }
+ 
+ ul.tab ul {
+     margin: 0%;
+     padding: 0;
+     list-style: none;
+     background-color: #FF6600;
+ }
+ 
+ ul.tab > li {
+     float: left;
+     /* 只有第一層是靠左對齊*/
+ }
+ 
+ ul.tab a {
+     color: #333;
+     display: block;
+     padding: 0 30px;
+     text-decoration: none;
+     line-height: 40px;
+ }
+ 
+ ul.tab a:hover {
+     /* 滑鼠滑入按鈕變色*/
+     background-color: #FF6600;
+     color: #CCCCCC;
+ }
+ 
+ ul.tab li:hover > a {
+     /* 滑鼠移入次選單上層按鈕保持變色*/
+     background-color: #CCCCCC;
+     color: #fff;
+ }
+ 
+ ul.tab ul {
+     /*隱藏次選單*/
+     display: none;
+ }
+ 
+ ul.tab li:hover > ul {
+     /* 滑鼠滑入展開次選單*/
+     display: block;
+ }
+ 
+ #test {
+     position: absolute;
+     /*絕對位置*/
+     z-index: 1000;
+     padding-bottom: 30px;
+     padding-left: 0;
+     padding-right: 0px;
+     padding-top: 25px;
+     margin: 0 auto;
+     width: 1000px;
+     height: 150px;
+ }
