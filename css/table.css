@@ -51,7 +51,7 @@
  
  #test {
      position: absolute;
-     /*絕對位置*/
+     /*標籤絕對位置*/
      z-index: 1000;
      padding-bottom: 30px;
      padding-left: 0;
@@ -65,9 +65,11 @@
  #imm1 {
      position: relative;
      width: 500px;
+     /*此區塊寬度*/
  }
  
  #imm {
+     /*圖片在此區塊位置*/
      position: absolute;
      top: 0;
      right: 20;
