@@ -6,6 +6,10 @@
      /* 取消ul預設的內縮及樣式 */
  }
  
+ li a {
+     color: #11767E;
+ }
+ 
  ul.tab {
      margin-left: 2%;
      padding: 10px;
@@ -21,6 +25,10 @@
  ul.tab > li {
      float: left;
      /* 只有第一層是靠左對齊*/
+ }
+ 
+ ul.tab font {
+     color: #11767E;
  }
  
  ul.tab a {
