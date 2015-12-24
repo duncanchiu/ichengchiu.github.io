@@ -27,8 +27,17 @@
     background-image: url(../images/12345.png), url(../images/back1.jpg);
     background-repeat: no-repeat;
     width: 1200px;
-    height: 800px;
+    height: 745px;
     z-index: -2;
+    margin: 0 auto;
+    position: relative;
+}
+
+#bodybackg2 {
+    background-image: url(../images/b2.png);
+    background-repeat: repeat-y;
+    width: 1200px;
+    z-index: -3;
     margin: 0 auto;
 }
 
@@ -81,6 +90,7 @@ ul.tab {
     /*背景透明度*/
     opacity: 0.9;
     height: 0px;
+    z-index: 2;
 }
 
 ul.tab ul {
@@ -136,6 +146,7 @@ ul.tab li:hover > ul {
 #imm1 {
     position: relative;
     width: 500px;
+    left: 350px;
     /*此區塊寬度*/
 }
 
@@ -144,4 +155,58 @@ ul.tab li:hover > ul {
     position: absolute;
     top: 0;
     right: 20;
+    z-index: 0;
+}
+
+@-webkit-keyframes slideInLeft {
+    from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}
+
+.left {
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    z-index: 1;
+}
+
+.slideInLeft img {
+    z-index: 1;
+    width: 810px;
+    height: 746px;
+}
+
+.indexright {
+    width: 400px;
+    position: absolute;
+    right: 0;
+    top: 300px;
+}
+
+.indexright img {
+    width: 350px;
 }
