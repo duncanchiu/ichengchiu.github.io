@@ -95,9 +95,7 @@ li a {
     right: 0px;
 }
 
-ul.tab {
-    float: right;
-    background-color: #5523F7;
+.tab ul {
     /*背景透明度*/
     opacity: 0.9;
     height: 0px;
